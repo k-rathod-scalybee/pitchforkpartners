@@ -6,7 +6,14 @@ AOS.init({
 // AOS Animation
 
 // Header Fixed
-
+$(window).scroll(function () {
+  if ($(window).scrollTop() >= 200) {
+    $('.pp-header').addClass('fixed-header');
+  }
+  else {
+    $('.pp-header').removeClass('fixed-header');
+  }
+});
 // Header Fixed
 
 // Search JS
@@ -20,7 +27,7 @@ $(document).ready(function(){
 });
 // Search JS
 
-// hero Slider
+// Hero Slider
 var swiper = new Swiper(".hero-slider", {
   slidesPerView: 1,
   loop: true,
@@ -34,10 +41,11 @@ var swiper = new Swiper(".hero-slider", {
   breakpoints: {
     0: {
       pagination: {
-        el: ".swiper-pagination"
+        el: ".swiper-pagination",
+        clickable: true
       }
     },
-    1024: {
+    1200: {
       pagination: false
     }
   }
