@@ -42,6 +42,13 @@ ul {
     margin: 0;
     padding: 0;
 }
+::selection {
+    background: var(--pink);
+    color: #ffffff;
+}
+p {
+    line-height: 1.6;
+}
 
 /* Color */
 .text--dark-grey {
@@ -288,6 +295,8 @@ h6, .h6 {
     color: #fff;
 }
 .pp-sidemenu .close-side-menu svg {
+    width: 2.222rem;
+    height: 2.222rem;
     fill: #ffffff;
     stroke: #ffffff;
 }
@@ -526,6 +535,18 @@ a:hover svg path {
     z-index: 100;
     visibility: hidden;
     transition: opacity 0.1s ease;
+}
+
+.pp-hero-inner {
+    min-height: 90vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.pp-hero-inner-text h1 {
+    font-size: 5rem;
 }
 /* Hero Block CSS */
 
@@ -1170,6 +1191,10 @@ a:hover svg path {
     .hero-slider-cursor {
         display: none;
     }
+    
+    .pp-hero-inner {
+        min-height: 40vh;
+    }
     /* Hero Block CSS */
 
     /* Newsletter CSS */
@@ -1223,6 +1248,10 @@ a:hover svg path {
     .pp-sidemenu .close-side-menu svg rect {
         transform: translateY(1.2rem);
     }
+
+    .pp-hero-inner-text h1 {
+        font-size: 3rem;
+    }    
     /* Header CSS */
 
     /* Hero Block CSS */
@@ -1283,6 +1312,10 @@ a:hover svg path {
         font-size: 1.5rem;
     }
 
+    .global-reality-item img {
+        width: 4rem;
+    }
+
     /* Header CSS */
     .pp-header .container-fluid {
         padding: 0 1.5rem;
@@ -1296,6 +1329,13 @@ a:hover svg path {
     .pp-hero-item .pp-hero-content h2 {
         font-size: 1.8rem;
         line-height: 1.3;
+    }
+
+    .pp-hero-inner {
+        min-height: 50vh;
+    }
+    .pp-hero-inner-text h1 {
+        font-size: 1.8rem;
     }
     /* Hero Block CSS */
 
