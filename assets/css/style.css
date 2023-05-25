@@ -780,6 +780,29 @@ a:hover svg path {
     line-height: 1.6;
     margin-bottom: 0;
 }
+
+.pp-we-do-list {
+    --bs-gutter-x: 5.556rem;
+}
+.pp-we-do-list .pp-we-do-item {
+    padding: 0;
+    border: none;
+    height: auto;
+    margin-bottom: 3.889rem;
+}
+.pp-we-do-list .pp-we-do-item .pp-we-do-icon {
+    min-width: 4.444rem;
+    margin-right: 1.389rem;
+}
+.pp-we-do-list .pp-we-do-info {
+    margin-top: 0;
+}
+.pp-we-do-list .pp-we-do-info h5 {
+    font-size: 1.389rem;
+}
+.pp-we-do-list .pp-we-do-info p {
+    color: var(--black);
+}
 /* What We Do CSS */
 
 /* Company Stats CSS  */
@@ -1197,6 +1220,12 @@ a:hover svg path {
     }
     /* Hero Block CSS */
 
+    /* What We Do CSS */
+    .pp-we-do-list {
+        --bs-gutter-x: 1.5rem;
+    }
+    /* What We Do CSS */
+
     /* Newsletter CSS */
     .pp-newsletter .qodef-row-background-text-holder {
         left: 0;
@@ -1338,6 +1367,20 @@ a:hover svg path {
         font-size: 1.8rem;
     }
     /* Hero Block CSS */
+
+    /* What We Do CSS */
+    .pp-we-do-list .pp-we-do-item .pp-we-do-icon {
+        min-width: 3rem;
+        margin-right: 1rem;
+    }
+    .pp-we-do-list .pp-we-do-icon img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .pp-we-do-list .pp-we-do-info h5 {
+        font-size: 1.2rem;
+    }
+    /* What We Do CSS */
 
     /* Newsletter CSS */
     .pp-newsletter {
