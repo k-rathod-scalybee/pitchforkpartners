@@ -1038,6 +1038,9 @@ h6, .h6 {
     margin: 0;
     z-index: 10000;
     cursor: pointer;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
     opacity: 0;
     visibility: hidden;
 }
@@ -1051,9 +1054,6 @@ h6, .h6 {
 .back-to-top-text {
     display: block;
     position: relative;
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
     font-size: 1.111rem;
     color: var(--pink);
 }
@@ -1165,6 +1165,13 @@ h6, .h6 {
         padding: 10px;
     }
     /* Team CSS */
+
+    /* Footer CSS */
+    .pp-footer .row,
+    .pp-our-process .row {
+        --bs-gutter-x: 1.5rem;
+    }
+    /* Footer CSS */
 }
 @media (max-width: 991px) {
     html { font-size: 15px; }
@@ -1254,6 +1261,10 @@ h6, .h6 {
     /* Hero Block CSS */
     .pp-hero-image {
         min-height: 100vh;
+    }
+    .pp-hero-item .pp-hero-content h2 {
+        font-size: 1.8rem;
+        line-height: 1.3;
     }
     /* Hero Block CSS */
 
