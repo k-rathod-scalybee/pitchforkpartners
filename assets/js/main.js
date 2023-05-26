@@ -158,28 +158,28 @@ if(sliderButtons.length){
 // Hero Slider Arrow Cursor
 
 // Menu Active Effect
-$(function(){
-	var menu = $(".navbar-menu");
-  var indicator = $('<span class="indicator"></span>');
-  menu.append(indicator);
-  position_indicator(menu.find("li.current-menu-item"));  
-  setTimeout(function(){indicator.css("opacity", 1);}, 500);
-  menu.find("li").mouseenter(function(){
-  	position_indicator($(this));
-  });
-  menu.find("li").mouseleave(function(){
-  	position_indicator(menu.find("li.current-menu-item"));
-  });
+// $(function(){
+// 	var menu = $(".navbar-menu");
+//   var indicator = $('<span class="indicator"></span>');
+//   menu.append(indicator);
+//   position_indicator(menu.find("li.current-menu-item"));  
+//   setTimeout(function(){indicator.css("opacity", 1);}, 500);
+//   menu.find("li").mouseenter(function(){
+//   	position_indicator($(this));
+//   });
+//   menu.find("li").mouseleave(function(){
+//   	position_indicator(menu.find("li.current-menu-item"));
+//   });
   
-  function position_indicator(ele){
-    var left = ele.offset().left - 440;
-    var width = ele.width();
-    indicator.stop().animate({
-      left: left,
-      width: width
-    });
-  }
-});
+//   function position_indicator(ele){
+//     var left = ele.offset().left - 440;
+//     var width = ele.width();
+//     indicator.stop().animate({
+//       left: left,
+//       width: width
+//     });
+//   }
+// });
 // Menu Active Effect
 
 // Back to Top
