@@ -560,18 +560,24 @@
                 <div class="swiper pp-video-slider mt-5">
                     <div class="swiper-wrapper pb-5">
                         <div class="swiper-slide">
-                            <div class="pp-video-item ratio ratio-16x9">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/dwNayOgHOAI" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <div id="home-video1" class="pp-video-item bg--grey ratio ratio-16x9">
+                                <div class="loader d-flex align-items-center justify-content-center">
+                                    <div class="spinner-border" role="status"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="pp-video-item ratio ratio-16x9">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/EupUJiiZG4Y" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <div id="home-video2" class="pp-video-item bg--grey ratio ratio-16x9">
+                                <div class="loader d-flex align-items-center justify-content-center">
+                                    <div class="spinner-border" role="status"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="pp-video-item ratio ratio-16x9">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/zbOs23ZsDMk" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <div id="home-video3" class="pp-video-item bg--grey ratio ratio-16x9">
+                                <div class="loader d-flex align-items-center justify-content-center">
+                                    <div class="spinner-border" role="status"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -840,7 +846,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-widget">
                         <div class="footer-logo">
-                            <a href="#"><img src="./assets/images/logo/pitchfork-logo.png" alt="Pitchfork Partners"></a>
+                            <a href="./index.html"><img src="./assets/images/logo/pitchfork-logo.png" width="217" height="76" loading="lazy" alt="Pitchfork Partners"></a>
                         </div>
                         <div class="footer-copyright mt-5">
                             <p class="mb-0">Copyright © 2023 Pitchfork Partners. All Rights Reserved.</p>
@@ -973,5 +979,17 @@
     <script src="./assets/plugins/aos@2.3.1/js/aos.js"></script>
     <!-- Custom Script -->
     <script src="./assets/js/main.js"></script>
+
+    <!-- Video JS for Load Delay -->
+    <script>
+        $(window).bind("load", function() {
+            setTimeout(function() {
+                $('#home-video1').prepend('<iframe width="560" height="315" src="https://www.youtube.com/embed/dwNayOgHOAI" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
+                $('#home-video2').prepend('<iframe width="560" height="315" src="https://www.youtube.com/embed/EupUJiiZG4Y" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
+                $('#home-video3').prepend('<iframe width="560" height="315" src="https://www.youtube.com/embed/zbOs23ZsDMk" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
+                $('.loader').remove();
+            }, 3000);
+        });
+    </script>
 </body>
 </html>
