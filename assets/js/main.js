@@ -16,6 +16,15 @@ $(window).scroll(function () {
 });
 // Header Fixed
 
+// Mobile Menu Toggle
+$(document).ready(function(){
+  $('.pp-header-menu').click(function() {
+    $('.navbar-menu').slideToggle();
+    $(this).toggleClass('open');
+  })
+});
+// Mobile Menu Toggle
+
 // Search JS
 $(document).ready(function(){
   $(".pp-header-search").click(function(){
@@ -33,6 +42,10 @@ var swiper = new Swiper(".hero-slider", {
   loop: true,
   effect: "fade",
   lazy: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
