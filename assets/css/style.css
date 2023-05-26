@@ -315,6 +315,9 @@ body:not(.home) .pp-header-wrapper {
 .fixed-header .navbar-menu .indicator {
     border-color: var(--black);
 }
+.fixed-header .navbar li a:before {
+    background-color: var(--black);
+}
 .pp-header-search {
     font-size: 0.889rem;
     color: #ffffff;
