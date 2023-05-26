@@ -330,7 +330,6 @@ body:not(.home) .pp-header-wrapper {
     overflow: hidden;
     visibility: hidden;
     z-index: 9999;
-    -webkit-backface-visibility: hidden;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-box-shadow: -3px 0 3px rgba(0,0,0,.04);
